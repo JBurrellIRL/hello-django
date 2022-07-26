@@ -19,6 +19,11 @@
             {% else %}
             <td>{{ item.name }}</td>
             {% endif %}
+            <td>
+                <a href="/edit/{{ item.id }}">
+                    <button>edit</button>
+                </a>
+            </td>
         </tr>
         <!-- If theres no todo items in the database, empty tag handles this  -->
         {% empty %}
